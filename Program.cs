@@ -212,11 +212,11 @@ class Program
         //1010, eller tallet -6;
         Console.WriteLine(bitNot);
 
-        
+        //Her ser koden vår at vi refererer til en blokk, så runtimen som leser koden vår, henter blokken fra hvornåenn den er. og kjører den. 
         double getNumFromBlock = BlockDefinedDouble();
         Console.WriteLine(getNumFromBlock);
 
-        //statement blokk
+        //statement blokk som runtimen henter for å vite hva den skal kjøre på linje 215. denne type blokk blir også kalt metode. 
         double BlockDefinedDouble()
         {
             double myNum = 10;
