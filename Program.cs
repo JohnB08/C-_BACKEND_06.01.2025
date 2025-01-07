@@ -80,6 +80,7 @@ class Program
 
         //Eksempel på største positive verdien til en integer.
         int positivMaksverdi = 2147483647;
+        Console.WriteLine(positivMaksverdi);
 
         //Eksempel på en double med for mange desimaltall.
         double forStortDesimalTall = 10.999999999999999999;
@@ -161,5 +162,65 @@ class Program
         bool erMindreEnn = num1 < num2;
         Console.WriteLine(erMindreEnn);
 
+
+        //LogikkOperatorer
+
+        // && også operator
+
+        bool andEqual = num1 == 2 && num2 == 4;
+        //Statementen her spør følgende: er num1 lik tallet 2 OG er num2 lik tallet 4? Begge må stemme for at vår statement skal være sann.
+        Console.WriteLine(andEqual);
+
+        // || eller operator
+
+        bool orEqual = num1 == 2 || num2 == 8;
+        //Statementen her spør følgende: er num1 lik tallet 2, ELLER er num2 lik tallet 8? Bare en av spørringene må være sann, for at hele spørringen er sann. 
+        Console.WriteLine(orEqual);
+
+        // ! omvendt opperator
+
+        bool oppositeEqual = !andEqual;
+        //Statementen her sier at vår bool oppositeEqual skal være det omvende av andEqual.
+        Console.WriteLine(oppositeEqual);
+
+
+        //Bitwise operatorer
+        int five = 0b0101;
+        int three = 0b0011;
+
+        //Bitwise And / Og
+
+        int bitAnd = five & three;
+        //0001 svaret er tallet 1;
+        Console.WriteLine(bitAnd);
+
+        //Bitwise Or / Eller;
+
+        int bitOr = five | three;
+        //0111 eller tallet 7;
+        Console.WriteLine(bitOr);
+
+        // Eklusiv Eller / xOr
+
+        int bitXOr = five ^ three;
+        //0110 eller tallet 6;
+        Console.WriteLine(bitXOr);
+
+        //Not / bitOpposite / Ikke
+
+        int bitNot = ~five;
+        //1010, eller tallet -6;
+        Console.WriteLine(bitNot);
+
+        
+        double getNumFromBlock = BlockDefinedDouble();
+        Console.WriteLine(getNumFromBlock);
+
+        //statement blokk
+        double BlockDefinedDouble()
+        {
+            double myNum = 10;
+            return myNum;
+        }
     }
 }   
